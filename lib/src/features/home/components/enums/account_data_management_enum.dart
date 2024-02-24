@@ -1,0 +1,3 @@
+enum AccountDataManagementEnum{
+  get, save
+}

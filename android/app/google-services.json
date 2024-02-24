@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "577280720690",
+    "project_id": "sms-auth-aef79",
+    "storage_bucket": "sms-auth-aef79.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577280720690:android:a1801c8ec1eda0495d212b",
+        "android_client_info": {
+          "package_name": "com.example.sms.auth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq_c04HoXb1HrnLPmwLRUaoXGe6y1pa88"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

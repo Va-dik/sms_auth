@@ -1,0 +1,1 @@
+enum HomePagesEnum{myProjects, myAccount}
