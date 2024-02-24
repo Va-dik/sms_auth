@@ -13,10 +13,10 @@ class SignUpStateSwitcher extends StatelessWidget {
   SignUpStateSwitcher({super.key});
 
   final TextEditingController _phoneNumberController =
-      TextEditingController(text: '+375 ');
+      TextEditingController(text: '+7 ');
 
   final MaskTextInputFormatter _maskFormatter = MaskTextInputFormatter(
-    mask: '+375 (##) ### ## ##',
+    mask: '+7 (###) ### ## ##',
     filter: {'#': RegExp(r'[0-9]')},
   );
   final List<String> smsCode = ['', '', '', '', '', ''];

@@ -61,7 +61,7 @@ final class SignUpBloc extends Bloc<SignUpEvent, SignUpState> {
     if (state.timerDuration == 60) {
       while (state.timerDuration > 0) {
         await Future.delayed(
-          const Duration(milliseconds: 200),
+          const Duration(seconds: 1),
           () => emit(state.copyWith(timerDuration: state.timerDuration - 1)),
         );
       }

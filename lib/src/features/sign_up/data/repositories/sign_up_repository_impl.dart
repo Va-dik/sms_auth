@@ -4,7 +4,6 @@ import 'package:sms_auth/src/features/sign_up/domain/repositories/i_sign_up_repo
 class SignUpRepositoryImpl implements ISignUpRepository {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   String verificationId = '';
-  int resendToken = 0;
   String phoneNumber = '';
 
   @override
@@ -17,7 +16,6 @@ class SignUpRepositoryImpl implements ISignUpRepository {
       verificationFailed: (error) => print(error),
       codeSent: (verificationId, forceResendingToken) {
         this.verificationId = verificationId;
-        resendToken = forceResendingToken ?? 0;
       },
       codeAutoRetrievalTimeout: (verificationId) =>
           this.verificationId = verificationId,
